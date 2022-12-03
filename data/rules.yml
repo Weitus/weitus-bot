@@ -11,3 +11,7 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Anytime dean's office is mentioned
+  steps:
+  - intent: dean_office

@@ -124,3 +124,19 @@ nlu:
     - recruitment time
     - recruitment schedule
     - what is the recruitment schedule
+
+- intent: dean_office
+  examples: |
+    - where is dean office
+    - dean office
+    - when is dean office open
+    - what is dean office number
+    - dean office telephone number
+    - where can I hand my papers in
+    - where can I hand my documents in
+    - where can I submit my documents
+    - where can I submit my papers
+    - student office
+    - students office
+    - where is students office
+    - when is students office open
