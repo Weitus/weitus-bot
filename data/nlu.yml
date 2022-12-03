@@ -132,6 +132,7 @@ nlu:
     - when is dean office open
     - what is dean office number
     - dean office telephone number
+    - students office telephone number
     - where can I hand my papers in
     - where can I hand my documents in
     - where can I submit my documents
@@ -140,3 +141,35 @@ nlu:
     - students office
     - where is students office
     - when is students office open
+
+- intent: ask_other_activities
+  examples: |
+    - are there any other activities on Weiti
+    - students clubs
+    - student club
+    - academic circle
+    - intrest group
+    - student organisation
+    - golem
+    - student groups
+    - student society
+
+- intent: ask_student_housing
+  examples: |
+    - student housing
+    - dormitory
+    - dorm
+    - riviera
+    - student accomodation
+    - accomodation
+    - mikrus
+    - akademik
+    - alcatraz
+    - ustron
+
+- intent: ask_student_housing_price
+  examples: |
+    - price
+    - price for accomodation
+    - payment
+    - rent for dormitory

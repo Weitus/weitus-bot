@@ -12,6 +12,9 @@ intents:
   - ask_about_recruitment
   - ask_about_recruitment_time
   - dean_office
+  - ask_other_activities
+  - ask_student_housing
+  - ask_student_housing_price
 
 responses:
   utter_greet:
@@ -54,7 +57,17 @@ responses:
   - text: "yea idk check here\n https://www.elka.pw.edu.pl/content/view/full/1776"
 
   utter_dean_office:
-  - text: "Students Office is located here:\n https://www.google.com/maps/place/Wydzia%C5%82+Elektroniki+i+Technik+Informacyjnych,+Politechnika+Warszawska/@52.2190346,21.0096698,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecce91dd158b3:0x188bc853d7b6b561!8m2!3d52.2190346!4d21.0118585?hl=pl   and is open from 8 a.m. to 4 a.m. You can find more information here:\n https://www.elka.pw.edu.pl/eng/Faculty/Faculty-main-units/Students-Office"
+  - text: "Students Office is located here:\n https://www.google.com/maps/place/Wydzia%C5%82+Elektroniki+i+Technik+Informacyjnych,+Politechnika+Warszawska/@52.2190346,21.0096698,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecce91dd158b3:0x188bc853d7b6b561!8m2!3d52.2190346!4d21.0118585?hl=pl \n  and is open from 8 a.m. to 4 a.m. You can find more information here:\n https://www.elka.pw.edu.pl/eng/Faculty/Faculty-main-units/Students-Office"
+
+  utter_other_activities:
+  - text: "There are many Students Organisations and Clubs on WEITI like AI Club GOLEM. You can find more about them here: \n https://www.elka.pw.edu.pl/eng/Research/Students-Organisations-and-Clubs"
+
+  utter_student_housing:
+  - text: "You can find info about student housing here: \n https://www.akademiki.pw.edu.pl/akademiki_en"
+
+  utter_student_housing_price:
+  - text: "Here you have some information about prices: \n https://www.akademiki.pw.edu.pl/akademiki_en/Akty-prawne"
+
 
 session_config:
   session_expiration_time: 60
