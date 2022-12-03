@@ -17,10 +17,10 @@ responses:
   utter_greet:
   - text: "Hey! I'm WEITUŚ the information chatbot. Would you like to know something about WEiTI?"
 
-  unhelpful:
+  utter_unhelpful:
   - text: "Okay... I doubt i could help you then..."
 
-  helpful:
+  utter_helpful:
   - text: "Fantastic! What would you like to know then?"
 
   utter_cheer_up:

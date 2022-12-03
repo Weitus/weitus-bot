@@ -14,14 +14,14 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: deny
-  - action: unhelpful
+  - action: utter_unhelpful
 
 - story: greet yes path
   steps: 
   - intent: greet
   - action: utter_greet
   - intent: affirm
-  - intent: helpful
+  - intent: utter_helpful
 
 - story: sad path 1
   steps:

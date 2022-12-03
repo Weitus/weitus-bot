@@ -15,3 +15,4 @@ rules:
 - rule: Anytime dean's office is mentioned
   steps:
   - intent: dean_office
+  - action: utter_dean_office
