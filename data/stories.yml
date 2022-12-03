@@ -2,76 +2,80 @@ version: "3.1"
 
 stories:
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
 
-- story: greet no path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: deny
-  - action: utter_unhelpful
+  - story: greet no path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: deny
+      - action: utter_unhelpful
 
-- story: greet yes path
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: affirm
-  - action: utter_helpful
+  - story: greet yes path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: affirm
+      - action: utter_helpful
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
 
-- story: ask about WEiTI
-  steps:
-  - intent: ask_about_weiti
-  - action: utter_weiti_info
+  - story: ask about WEiTI
+    steps:
+      - intent: ask_about_weiti
+      - action: utter_weiti_info
 
-- story: ask about WEiTI recruitment process
-  steps:
-  - intent: ask_about_recruitment
-  - action: utter_recruitment_generic
-  - action: utter_recruitment_ask_more
-  - intent: ask_about_recruitment_time
-  - action: utter_recruitment_time
+  - story: ask about WEiTI recruitment process
+    steps:
+      - intent: ask_about_recruitment
+      - action: utter_recruitment_generic
+      - action: utter_recruitment_ask_more
+      - intent: ask_about_recruitment_time
+      - action: utter_recruitment_time
 
-- story: ask about other activities on WEITI
-  steps:
-    - intent: ask_other_activities
-    - action: utter_other_activities
+  - story: ask about other activities on WEITI
+    steps:
+      - intent: ask_other_activities
+      - action: utter_other_activities
 
-- story: ask about student housing
-  steps:
-    - intent: ask_student_housing
-    - action: utter_other_activities
-    - intent: ask_student_housing_price
-    - action: utter_student_housing_price
+  - story: ask about student housing
+    steps:
+      - intent: ask_student_housing
+      - action: utter_other_activities
+      - intent: ask_student_housing_price
+      - action: utter_student_housing_price
 
-- story: ask about what can student learn at WEiTI
-  steps:
-    - intent: ask_about_courses
-    - action: utter_weiti_courses
-    - intent: ask_about_scope_of_studies
-    - action: utter_course_info
+  - story: ask about what can student learn at WEiTI
+    steps:
+      - intent: ask_about_courses
+      - action: utter_weiti_courses
+  #      - action: utter_course_info
+
+  - story: ask about what can student learn on exact course
+    steps:
+      - intent: ask_about_scope_of_studies
+      - action: utter_course_info
 
