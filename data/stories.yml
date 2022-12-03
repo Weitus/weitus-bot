@@ -21,7 +21,7 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: affirm
-  - intent: utter_helpful
+  - action: utter_helpful
 
 - story: sad path 1
   steps:
