@@ -89,3 +89,38 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_about_weiti
+  examples: |
+    - tell me about weiti
+    - what's weiti
+    - who do you work for
+    - about weiti
+    - weiti information
+    - information about weiti
+    - weiti info
+    - info about weiti
+
+- intent: ask_about_recruitment
+  examples: |
+    - tell me about recruitment
+    - what's recruitment
+    - about recruitment
+    - recruitment information
+    - information about recruitment
+    - recruitment info
+    - info about recruitment
+    - how do I study at weiti
+    - how do I join weiti
+    - how do I join
+    - how do I apply
+
+- intent: ask_about_recruitment_time
+  examples: |
+    - when is recruitment
+    - what are the times
+    - when can I apply
+    - about recruitment times
+    - recruitment time
+    - recruitment schedule
+    - what is the recruitment schedule

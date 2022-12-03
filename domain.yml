@@ -8,6 +8,9 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - ask_about_weiti
+  - ask_about_recruitment
+  - ask_about_recruitment_time
 
 responses:
   utter_greet:
@@ -28,6 +31,20 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_weiti_info:
+  - text: |
+      WEiTI is the faculty of Electronics and Information Technology at the Warsaw University of Technology
+      It is the biggest faculty, having around 3400 students, 300 lecturers and 8 courses
+
+  utter_recruitment_generic:
+  - text: "The faculty offers about 900 spots for new students this year.\n https://www.elka.pw.edu.pl/content/view/full/1761"
+
+  utter_recruitment_ask_more:
+  - text: "What would you like to know about the process?"
+
+  utter_recruitment_time:
+  - text: "yea idk check here\n https://www.elka.pw.edu.pl/content/view/full/1776"
 
 session_config:
   session_expiration_time: 60

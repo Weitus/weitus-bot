@@ -28,3 +28,16 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: ask about WEiTI
+  steps:
+  - intent: ask_about_weiti
+  - action: utter_weiti_info
+
+- story: ask about WEiTI recruitment process
+  steps:
+  - intent: ask_about_recruitment
+  - action: utter_recruitment_generic
+  - action: utter_recruitment_ask_more
+  - intent: ask_about_recruitment_time
+  - action: utter_recruitment_time
