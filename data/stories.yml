@@ -67,3 +67,11 @@ stories:
     - action: utter_other_activities
     - intent: ask_student_housing_price
     - action: utter_student_housing_price
+
+- story: ask about what can student learn at WEiTI
+  steps:
+    - intent: ask_about_courses
+    - action: utter_weiti_courses
+    - intent: ask_about_scope_of_studies
+    - action: utter_course_info
+

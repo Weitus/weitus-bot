@@ -173,3 +173,14 @@ nlu:
     - price for accomodation
     - payment
     - rent for dormitory
+- intent: ask_about_courses
+  examples: |
+    - what can I study at WEiTI?
+    - what are the courses at WEiTI?
+
+- intent: ask_about_scope_of_studies
+  examples: |
+    - what can I learn on [informatics]{"entity": "course"}?
+    - what can I learn on [computer science]{"entity": "course"}?
+    - what can I learn on [telecommunication]{"entity": "course"}?
+    - what can I learn on [automation and robotics]{"entity": "course"}?

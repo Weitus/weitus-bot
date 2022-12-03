@@ -15,59 +15,112 @@ intents:
   - ask_other_activities
   - ask_student_housing
   - ask_student_housing_price
+  - ask_about_courses
+  - ask_about_scope_of_studies
+
+entities:
+  - course
+
+slots:
+  faculty:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: course
 
 responses:
   utter_greet:
-  - text: "Hey! I'm WEITUŚ the information chatbot. Would you like to know something about WEiTI?"
+    - text: "Hey! I'm WEITUŚ the information chatbot. Would you like to know something about WEiTI?"
 
   utter_unhelpful:
-  - text: "Okay... I doubt i could help you then..."
+    - text: "Okay... I doubt i could help you then..."
 
   utter_helpful:
-  - text: "Fantastic! What would you like to know then?"
+    - text: "Fantastic! What would you like to know then?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
 
   utter_weiti_info:
-  - text: |
-      WEiTI is the faculty of Electronics and Information Technology at the Warsaw University of Technology
-      It is the biggest faculty, having around 3400 students, 300 lecturers and 8 courses
+    - text: |
+        WEiTI is the faculty of Electronics and Information Technology at the Warsaw University of Technology
+        It is the biggest faculty, having around 3400 students, 300 lecturers and 8 courses
 
   utter_recruitment_generic:
-  - text: "The faculty offers about 900 spots for new students this year.\n https://www.elka.pw.edu.pl/content/view/full/1761"
+    - text: "The faculty offers about 900 spots for new students this year.\n https://www.elka.pw.edu.pl/content/view/full/1761"
 
   utter_recruitment_ask_more:
-  - text: "What would you like to know about the process?"
+    - text: "What would you like to know about the process?"
 
   utter_recruitment_time:
-  - text: "yea idk check here\n https://www.elka.pw.edu.pl/content/view/full/1776"
+    - text: "yea idk check here\n https://www.elka.pw.edu.pl/content/view/full/1776"
 
   utter_dean_office:
-  - text: "Students Office is located here:\n https://www.google.com/maps/place/Wydzia%C5%82+Elektroniki+i+Technik+Informacyjnych,+Politechnika+Warszawska/@52.2190346,21.0096698,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecce91dd158b3:0x188bc853d7b6b561!8m2!3d52.2190346!4d21.0118585?hl=pl \n  and is open from 8 a.m. to 4 a.m. You can find more information here:\n https://www.elka.pw.edu.pl/eng/Faculty/Faculty-main-units/Students-Office"
+    - text: "Students Office is located here:\n https://www.google.com/maps/place/Wydzia%C5%82+Elektroniki+i+Technik+Informacyjnych,+Politechnika+Warszawska/@52.2190346,21.0096698,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecce91dd158b3:0x188bc853d7b6b561!8m2!3d52.2190346!4d21.0118585?hl=pl \n  and is open from 8 a.m. to 4 a.m. You can find more information here:\n https://www.elka.pw.edu.pl/eng/Faculty/Faculty-main-units/Students-Office"
 
   utter_other_activities:
-  - text: "There are many Students Organisations and Clubs on WEITI like AI Club GOLEM. You can find more about them here: \n https://www.elka.pw.edu.pl/eng/Research/Students-Organisations-and-Clubs"
+    - text: "There are many Students Organisations and Clubs on WEITI like AI Club GOLEM. You can find more about them here: \n https://www.elka.pw.edu.pl/eng/Research/Students-Organisations-and-Clubs"
 
   utter_student_housing:
-  - text: "You can find info about student housing here: \n https://www.akademiki.pw.edu.pl/akademiki_en"
+    - text: "You can find info about student housing here: \n https://www.akademiki.pw.edu.pl/akademiki_en"
 
   utter_student_housing_price:
-  - text: "Here you have some information about prices: \n https://www.akademiki.pw.edu.pl/akademiki_en/Akty-prawne"
+    - text: "Here you have some information about prices: \n https://www.akademiki.pw.edu.pl/akademiki_en/Akty-prawne"
 
+
+  utter_weiti_courses:
+    - text: |
+        The faculty offers 7 courses in Polish and 2 in English
+        - Computer Science (in Polish and English)
+        - Telecommunications (in Polish and English)
+        - Electronics
+        - Automation and Robotics
+        - Cybersecurity
+        - Biomedical engineering
+        - Internet of Things engineering 
+
+  utter_course_info:
+    - condition:
+        - type: slot
+          name: faculty
+          value: "informatics"
+      text: "On informatics you can learn software engineering, artificial intelligence, computer graphics, computer networks, computer security, computer vision, databases, data mining, data structures, distributed systems, embedded systems, game programming, graphics programming, human-computer interaction, information retrieval, machine learning, mobile computing, natural language processing, operating systems, parallel computing, programming languages, robotics, software engineering, software testing, software verification and validation, systems programming, theory of computation, web programming, and many more."
+
+    - condition:
+        - type: slot
+          name: faculty
+          value: "computer science"
+      text: "On informatics you can learn software engineering, artificial intelligence, computer graphics, computer networks, computer security, computer vision, databases, data mining, data structures, distributed systems, embedded systems, game programming, graphics programming, human-computer interaction, information retrieval, machine learning, mobile computing, natural language processing, operating systems, parallel computing, programming languages, robotics, software engineering, software testing, software verification and validation, systems programming, theory of computation, web programming, and many more."
+
+    - condition:
+        - type: slot
+          name: faculty
+          value: "telecommunication"
+      text: "On telecommunications you can learn digital signal processing, digital communications, mobile communications, optical communications, wireless communications, and many more."
+
+    - condition:
+        - type: slot
+          name: faculty
+          value: "automation and robotics"
+      text: "Better"
+
+    - text: "There is no such course on WEiTI"
+
+actions:
+  - action_faculty_info
 
 session_config:
   session_expiration_time: 60
