@@ -11,10 +11,17 @@ intents:
   - ask_about_weiti
   - ask_about_recruitment
   - ask_about_recruitment_time
+  - 
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! I'm WEITUŚ the information chatbot. Would you like to know something about WEiTI?"
+
+  unhelpful:
+  - text: "Okay... I doubt i could help you then..."
+
+  helpful:
+  - text: "Fantastic! What would you like to know then?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"

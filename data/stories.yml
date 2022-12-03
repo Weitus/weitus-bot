@@ -9,6 +9,20 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
+- story: greet no path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: unhelpful
+
+- story: greet yes path
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - intent: helpful
+
 - story: sad path 1
   steps:
   - intent: greet
@@ -41,3 +55,4 @@ stories:
   - action: utter_recruitment_ask_more
   - intent: ask_about_recruitment_time
   - action: utter_recruitment_time
+
