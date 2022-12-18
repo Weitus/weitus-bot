@@ -64,7 +64,7 @@ stories:
   - story: ask about student housing
     steps:
       - intent: ask_student_housing
-      - action: utter_other_activities
+      - action: utter_student_housing
       - intent: ask_student_housing_price
       - action: utter_student_housing_price
 
