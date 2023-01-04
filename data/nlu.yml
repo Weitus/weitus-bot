@@ -1,189 +1,194 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
 
-- intent: ask_about_weiti
-  examples: |
-    - tell me about weiti
-    - what's weiti
-    - who do you work for
-    - about weiti
-    - weiti information
-    - information about weiti
-    - weiti info
-    - info about weiti
+  - intent: ask_about_weiti
+    examples: |
+      - tell me about weiti
+      - what's weiti
+      - who do you work for
+      - about weiti
+      - weiti information
+      - information about weiti
+      - weiti info
+      - info about weiti
 
-- intent: ask_about_recruitment
-  examples: |
-    - tell me about recruitment
-    - what's recruitment
-    - about recruitment
-    - recruitment information
-    - information about recruitment
-    - recruitment info
-    - info about recruitment
-    - how do I study at weiti
-    - how do I join weiti
-    - how do I join
-    - how do I apply
+  - intent: ask_about_recruitment
+    examples: |
+      - tell me about recruitment
+      - what's recruitment
+      - about recruitment
+      - recruitment information
+      - information about recruitment
+      - recruitment info
+      - info about recruitment
+      - how do I study at weiti
+      - how do I join weiti
+      - how do I join
+      - how do I apply
 
-- intent: ask_about_recruitment_time
-  examples: |
-    - when is recruitment
-    - what are the times
-    - when can I apply
-    - about recruitment times
-    - recruitment time
-    - recruitment schedule
-    - what is the recruitment schedule
+  - intent: ask_about_recruitment_time
+    examples: |
+      - when is recruitment
+      - what are the times
+      - when can I apply
+      - about recruitment times
+      - recruitment time
+      - recruitment schedule
+      - what is the recruitment schedule
 
-- intent: dean_office
-  examples: |
-    - where is dean office
-    - dean office
-    - when is dean office open
-    - what is dean office number
-    - dean office telephone number
-    - students office telephone number
-    - where can I hand my papers in
-    - where can I hand my documents in
-    - where can I submit my documents
-    - where can I submit my papers
-    - student office
-    - students office
-    - where is students office
-    - when is students office open
+  - intent: dean_office
+    examples: |
+      - where is dean office
+      - dean office
+      - when is dean office open
+      - what is dean office number
+      - dean office telephone number
+      - students office telephone number
+      - where can I hand my papers in
+      - where can I hand my documents in
+      - where can I submit my documents
+      - where can I submit my papers
+      - student office
+      - students office
+      - where is students office
+      - when is students office open
 
-- intent: ask_other_activities
-  examples: |
-    - are there any other activities on Weiti
-    - students clubs
-    - student club
-    - academic circle
-    - intrest group
-    - student organisation
-    - golem
-    - student groups
-    - student society
+  - intent: ask_other_activities
+    examples: |
+      - are there any other activities on Weiti
+      - students clubs
+      - student club
+      - academic circle
+      - intrest group
+      - student organisation
+      - golem
+      - student groups
+      - student society
 
-- intent: ask_student_housing
-  examples: |
-    - student housing
-    - dormitory
-    - dorm
-    - riviera
-    - student accomodation
-    - accomodation
-    - mikrus
-    - akademik
-    - alcatraz
-    - ustron
+  - intent: ask_student_housing
+    examples: |
+      - student housing
+      - dormitory
+      - dorm
+      - riviera
+      - student accomodation
+      - accomodation
+      - mikrus
+      - akademik
+      - alcatraz
+      - ustron
 
-- intent: ask_student_housing_price
-  examples: |
-    - price
-    - price for accomodation
-    - payment
-    - rent for dormitory
-- intent: ask_about_courses
-  examples: |
-    - what can I study at WEiTI?
-    - what are the courses at WEiTI?
+  - intent: ask_student_housing_price
+    examples: |
+      - price
+      - price for accomodation
+      - payment
+      - rent for dormitory
 
-- intent: ask_about_scope_of_studies
-  examples: |
-    - what can I learn on [informatics]{"entity": "course"}?
-    - what can I learn on [computer science]{"entity": "course"}?
-    - what can I learn on [telecommunication]{"entity": "course"}?
-    - what can I learn on [automation and robotics]{"entity": "course"}?
+  - intent: ask_about_courses
+    examples: |
+      - what can I study at WEiTI?
+      - what are the courses at WEiTI?
+
+  - intent: ask_about_scope_of_studies
+    examples: |
+      - what can I learn on [informatics]{"entity": "course"}?
+      - what can I learn on [computer science]{"entity": "course"}?
+      - what can I learn on [telecommunication]{"entity": "course"}?
+      - what can I learn on [automation and robotics]{"entity": "course"}?
+      - what can I learn on [electronics]{"entity": "course"}?
+      - what can I learn on [internet of things engineering]{"entity": "course"}?
+      - what can I learn on [cybersecurity]{"entity": "course"}?
+      - what can I learn on [biomedical engineering]{"entity": "course"}?
 
 - intent: ask_about_course_search
   examples: |

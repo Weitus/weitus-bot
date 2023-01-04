@@ -24,7 +24,7 @@ entities:
   - course
 
 slots:
-  faculty:
+  course:
     type: text
     mappings:
       - type: from_entity
@@ -99,31 +99,74 @@ responses:
         - Cybersecurity
         - Biomedical engineering
         - Internet of Things engineering 
+        Do you want to know more about any of them?
+      buttons:
+        - title: "Computer Science"
+          payload: '/ask_about_scope_of_studies{{"course":"computer science"}}'
+        - title: "Telecommunications"
+          payload: '/ask_about_scope_of_studies{{"course":"telecommunications"}}'
+        - title: "Electronics"
+          payload: '/ask_about_scope_of_studies{{"course":"electronics"}}'
+        - title: "Automation and Robotics"
+          payload: '/ask_about_scope_of_studies{{"course":"automation and robotics"}}'
+        - title: "Cybersecurity"
+          payload: '/ask_about_scope_of_studies{{"course":"cybersecurity"}}'
+        - title: "Biomedical engineering"
+          payload: '/ask_about_scope_of_studies{{"course":"biomedical engineering"}}'
+        - title: "Internet of Things engineering"
+          payload: '/ask_about_scope_of_studies{{"course":"internet of things engineering"}}'
+        - title: "No, thanks"
+          payload: "/affirm"
 
   utter_course_info:
     - condition:
         - type: slot
-          name: faculty
+          name: course
           value: "informatics"
-      text: "On informatics you can learn software engineering, artificial intelligence, computer graphics, computer networks, computer security, computer vision, databases, data mining, data structures, distributed systems, embedded systems, game programming, graphics programming, human-computer interaction, information retrieval, machine learning, mobile computing, natural language processing, operating systems, parallel computing, programming languages, robotics, software engineering, software testing, software verification and validation, systems programming, theory of computation, web programming, and many more."
+      text: "On computer science you can learn software engineering, artificial intelligence, computer graphics, computer networks, computer security, computer vision, databases, data mining, data structures, distributed systems, embedded systems, game programming, graphics programming, human-computer interaction, information retrieval, machine learning, mobile computing, natural language processing, operating systems, parallel computing, programming languages, robotics, software engineering, software testing, software verification and validation, systems programming, theory of computation, web programming, and many more."
 
     - condition:
         - type: slot
-          name: faculty
+          name: course
           value: "computer science"
-      text: "On informatics you can learn software engineering, artificial intelligence, computer graphics, computer networks, computer security, computer vision, databases, data mining, data structures, distributed systems, embedded systems, game programming, graphics programming, human-computer interaction, information retrieval, machine learning, mobile computing, natural language processing, operating systems, parallel computing, programming languages, robotics, software engineering, software testing, software verification and validation, systems programming, theory of computation, web programming, and many more."
+      text: "On computer science you can learn software engineering, artificial intelligence, computer graphics, computer networks, computer security, computer vision, databases, data mining, data structures, distributed systems, embedded systems, game programming, graphics programming, human-computer interaction, information retrieval, machine learning, mobile computing, natural language processing, operating systems, parallel computing, programming languages, robotics, software engineering, software testing, software verification and validation, systems programming, theory of computation, web programming, and many more."
 
     - condition:
         - type: slot
-          name: faculty
+          name: course
           value: "telecommunication"
       text: "On telecommunications you can learn digital signal processing, digital communications, mobile communications, optical communications, wireless communications, and many more."
 
     - condition:
         - type: slot
-          name: faculty
+          name: course
           value: "automation and robotics"
       text: "Better"
+
+    - condition:
+        - type: slot
+          name: course
+          value: "electronics"
+      text: "On electronics you can learn analog and digital electronics, microelectronics, semiconductor devices, and many more."
+
+    - condition:
+        - type: slot
+          name: course
+          value: "cybersecurity"
+      text: "On cybersecurity you can learn cryptography, network security, security of mobile devices, security of web applications, and many more."
+
+
+    - condition:
+        - type: slot
+          name: course
+          value: "biomedical engineering"
+      text: "On biomedical engineering you can learn biomedical signal processing, biomedical instrumentation, biomedical imaging, and many more."
+
+    - condition:
+        - type: slot
+          name: course
+          value: "internet of things engineering"
+      text: "On internet of things engineering you can learn internet of things, embedded systems, and many more."
 
     - text: "There is no such course on WEiTI"
 
