@@ -17,6 +17,8 @@ intents:
   - ask_student_housing_price
   - ask_about_courses
   - ask_about_scope_of_studies
+  - ask_about_course_search
+  - give_course_name
 
 entities:
   - course
@@ -80,6 +82,12 @@ responses:
   utter_student_housing_price:
     - text: "Here you have some information about prices: \n https://www.akademiki.pw.edu.pl/akademiki_en/Akty-prawne"
 
+  utter_ask_what_course:
+    - text: "What course whould you like inforamtion about?"
+
+  utter_what_I_found:
+    - text: "Thats what I found: \n"
+
 
   utter_weiti_courses:
     - text: |
@@ -121,6 +129,7 @@ responses:
 
 actions:
   - action_faculty_info
+  - action_USOS_API_course_search
 
 session_config:
   session_expiration_time: 60

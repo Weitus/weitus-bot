@@ -184,3 +184,29 @@ nlu:
     - what can I learn on [computer science]{"entity": "course"}?
     - what can I learn on [telecommunication]{"entity": "course"}?
     - what can I learn on [automation and robotics]{"entity": "course"}?
+
+- intent: ask_about_course_search
+  examples: |
+    - can you tell me something about courses?
+    - can you give me some info about one course?
+    - can you find me one course?
+    - describe me one course
+    - give me description of one course
+    - i'm looking for course
+    - give me description of subject
+
+- intent: give_course_name
+  examples: |
+    - ARKO
+    - SKM
+    - SKPS
+    - arko
+    - skm
+    - skps
+    - aisdi
+    - algorithms and data structures
+    - architektura komputerow
+    - sieci komputerowe
+    - databases
+    - databases 2
+    - numeric methods

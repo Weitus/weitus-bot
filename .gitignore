@@ -4,3 +4,4 @@
 /.rasa
 /results
 **/__pycache__
+/usosapi_test.py

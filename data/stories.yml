@@ -64,7 +64,7 @@ stories:
 - story: ask about student housing
   steps:
     - intent: ask_student_housing
-    - action: utter_other_activities
+    - action: utter_student_housing
     - intent: ask_student_housing_price
     - action: utter_student_housing_price
 
@@ -75,3 +75,10 @@ stories:
     - intent: ask_about_scope_of_studies
     - action: utter_course_info
 
+- story: ask about course search
+  steps:
+    - intent: ask_about_course_search
+    - action: utter_ask_what_course
+    - intent: give_course_name
+    - action: utter_what_I_found
+    - action: action_USOS_API_course_search
