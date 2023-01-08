@@ -79,10 +79,35 @@ stories:
       - intent: ask_about_scope_of_studies
       - action: utter_course_info
 
-- story: ask about course search
-  steps:
-    - intent: ask_about_course_search
-    - action: utter_ask_what_course
-    - intent: give_course_name
-    - action: utter_what_I_found
-    - action: action_USOS_API_course_search
+  - story: ask about course search
+    steps:
+      - intent: ask_about_course_search
+      - action: utter_ask_what_course
+      - intent: give_course_name
+      - action: utter_what_I_found
+      - action: action_USOS_API_course_search
+
+  - story: ask about projects
+    steps:
+      - intent: ask_about_projects
+      - action: utter_projects
+
+  - story: ask about websites
+    steps:
+      - intent: ask_about_websites
+      - action: utter_websites
+
+  - story: ask about course registration
+    steps:
+      - intent: ask_about_course_registration
+      - action: utter_registration
+
+  - story: ask about languages
+    steps:
+      - intent: ask_about_languages
+      - action: uther_languages
+      
+  - story: ask about PE
+    steps:
+      - intent: ask_about_PE
+      - action: utter_PE  

@@ -16,6 +16,26 @@ nlu:
       - goodmorning
       - goodevening
       - good afternoon
+      - Hello!
+      - Good morning!
+      - Good afternoon!
+      - Good evening!
+      - Hi there!
+      - How are you doing?
+      - How's it going?
+      - What's up?
+      - How's everything?
+      - How have you been?
+      - It's good to see you!
+      - It's nice to meet you.
+      - Glad to see you!
+      - Good to see you again.
+      - Welcome back!
+      - Welcome!
+      - Greetings!
+      - Salutations!
+      - Hi!
+      - Hello there!
 
   - intent: goodbye
     examples: |
@@ -29,6 +49,25 @@ nlu:
       - see you around
       - bye bye
       - see you later
+      - Goodbye!
+      - Farewell!
+      - Take care!
+      - See you later!
+      - See you soon!
+      - Talk to you later!
+      - I'll be seeing you!
+      - Until next time!
+      - Safe travels!
+      - Have a good day!
+      - Have a good night!
+      - Have a nice weekend!
+      - I'll miss you!
+      - So long!
+      - Adios!
+      - Au revoir!
+      - Ciao!
+      - Auf Wiedersehen!
+      - Sayonara!
 
   - intent: affirm
     examples: |
@@ -38,6 +77,24 @@ nlu:
       - of course
       - that sounds good
       - correct
+      - Yes!
+      - Absolutely!
+      - Definitely!
+      - Of course!
+      - Naturally!
+      - Sure!
+      - No problem!
+      - No doubt!
+      - Without a doubt!
+      - Agreed!
+      - Definitely!
+      - Absolutely!
+      - I'm with you!
+      - Count me in!
+      - On board!
+      - You bet!
+      - Absolutely!
+      - I'm in!
 
   - intent: deny
     examples: |
@@ -48,6 +105,23 @@ nlu:
       - don't like that
       - no way
       - not really
+      - No!
+      - Absolutely not!
+      - Definitely not!
+      - Of course not!
+      - Naturally not!
+      - Not at all!
+      - No way!
+      - No chance!
+      - Without a doubt not!
+      - Not agreed!
+      - Definitely not!
+      - Absolutely not!
+      - I'm not with you!
+      - Don't count me in!
+      - Not on board!
+      - No way!
+      - I'm not in!
 
   - intent: mood_great
     examples: |
@@ -215,3 +289,73 @@ nlu:
     - databases
     - databases 2
     - numeric methods
+
+- intent: ask_about_projects
+  examples: |
+    - what projects do you have
+    - what projects are you working on
+    - what projects do you have in the pipeline
+    - what projects do you have coming up
+    - what projects are on your plate
+    - what projects are you tackling
+    - what projects are you involved in
+    - what projects are you currently working on
+    - what projects are you focusing on
+    - what projects do you have underway
+    - what projects are you managing
+    - what projects are you responsible for
+    - what projects are you currently handling
+    - what projects are you dealing with
+    - what projects are you currently involved in
+    - what projects are you currently focusing on
+
+- intent: ask_about_websites
+  examples: |
+    - what websites do students use to get information
+    - what websites do students go to for information
+    - what websites do students rely on for information
+    - what websites do students use to find information
+    - what websites do students turn to for information
+    - what websites do students use to gather information
+    - what websites do students use to learn more
+    - what websites do students visit for information
+    - what websites do students use to research
+    - what websites do students use to get knowledge
+    - what websites do students use for information 
+
+- intent: ask_about_course_registration
+  examples: |
+    - how do students sign up for classes
+    - how do students register for classes
+    - how do students enroll in classes
+    - how do students select their classes
+    - how do students choose their classes
+    - how do students add classes
+    - how do students sign up for courses
+    - how do students register for courses
+    - how do students enroll in courses
+    - how do students select their courses
+    - how do students choose their courses
+    - how do students add courses
+
+- intent: ask_about_languages:
+  examples: |
+    - what languages are available
+    - what languages can be learned
+    - what languages are offered
+    - what languages are taught
+    - what languages are supported
+    - what languages can be studied
+    - what languages are offered to learn
+    - what languages are offered to study
+
+- intent: ask_about_PE:
+  examples: |
+    - what physical education classes are available
+    - what physical education classes can be taken
+    - what physical education classes are offered
+    - what physical education classes are taught
+    - what physical education classes are supported
+    - what physical education classes can be studied
+    - what physical education classes are offered to take
+    - what physical education classes are offered to study

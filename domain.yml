@@ -88,6 +88,27 @@ responses:
   utter_what_I_found:
     - text: "Thats what I found: \n"
 
+  utter_projects:
+    - text: "You can find informations about our projects and science labs here: \n https://www.pw.edu.pl/Badania/Projekty-badawcze"
+
+  utter_websites:
+    - text: "PW is called 'Technicznie najlepsi!', so they are using many websites to communicate with students.\n
+             Here you have example ones:
+             - MoodlePW\n
+             - USOSPW\n
+             - Studia3\n
+             - MicrosoftTeams\n
+             Of course each course is available at only one specific page and you have to find which one is used.\
+             Despite of that, you can't forget, that some professors are above those websites and creating their owns."
+
+  utter_registration:
+    - text: "Registration for classes is done in various ways. Most of them are based on enrollments in successive rounds. Unfortunately, there are often situations where students do not get into their model classes and have to take them in the next semesters. It is even more difficult with languages and physical education, which registration begins at 6am and is based on the principle: first come, first served. An additional difficulty is that at 6am the registration platform often has a technical break, lasting even several tens of minutes."
+
+  utter_languages:
+    - text: "Information about languages are available at:\n https://www.sjo.pw.edu.pl"
+
+  utter_PE:
+    - text: "Information about languages are available at:\n https://www.swfis.pw.edu.pl"
 
   utter_weiti_courses:
     - text: |
