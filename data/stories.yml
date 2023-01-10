@@ -61,12 +61,12 @@ stories:
       - intent: ask_other_activities
       - action: utter_other_activities
 
-- story: ask about student housing
-  steps:
-    - intent: ask_student_housing
-    - action: utter_student_housing
-    - intent: ask_student_housing_price
-    - action: utter_student_housing_price
+  - story: ask about student housing
+    steps:
+      - intent: ask_student_housing
+      - action: utter_student_housing
+      - intent: ask_student_housing_price
+      - action: utter_student_housing_price
 
   - story: ask about what can student learn at WEiTI
     steps:
@@ -79,10 +79,24 @@ stories:
       - intent: ask_about_scope_of_studies
       - action: utter_course_info
 
-- story: ask about course search
-  steps:
-    - intent: ask_about_course_search
-    - action: utter_ask_what_course
-    - intent: give_course_name
-    - action: utter_what_I_found
-    - action: action_USOS_API_course_search
+  - story: ask about course search
+    steps:
+      - intent: ask_about_course_search
+      - action: utter_ask_what_course
+      - intent: give_course_name
+      - action: utter_what_I_found
+      - action: action_USOS_API_course_search
+
+  - story: ask about staff search
+    steps:
+      - intent: ask_if_someone_works
+      - action: utter_give_name
+      - intent: name_and_surname
+      - action: action_USOS_API_does_work
+
+  - story: use USOS API freely
+    steps:
+      - intent: use_USOS_API
+      - action: utter_give_link
+      - intent: USOS_API_query
+      - action: action_USOS_API_free

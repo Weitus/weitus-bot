@@ -190,28 +190,65 @@ nlu:
       - what can I learn on [cybersecurity]{"entity": "course"}?
       - what can I learn on [biomedical engineering]{"entity": "course"}?
 
-- intent: ask_about_course_search
-  examples: |
-    - can you tell me something about courses?
-    - can you give me some info about one course?
-    - can you find me one course?
-    - describe me one course
-    - give me description of one course
-    - i'm looking for course
-    - give me description of subject
+  - intent: ask_about_course_search
+    examples: |
+      - can you tell me something about courses?
+      - can you give me some info about one course?
+      - can you find me one course?
+      - describe me one course
+      - give me description of one course
+      - i'm looking for course
+      - give me description of subject
 
-- intent: give_course_name
-  examples: |
-    - ARKO
-    - SKM
-    - SKPS
-    - arko
-    - skm
-    - skps
-    - aisdi
-    - algorithms and data structures
-    - architektura komputerow
-    - sieci komputerowe
-    - databases
-    - databases 2
-    - numeric methods
+  - intent: give_course_name
+    examples: |
+      - ARKO
+      - SKM
+      - SKPS
+      - arko
+      - skm
+      - skps
+      - aisdi
+      - algorithms and data structures
+      - architektura komputerow
+      - sieci komputerowe
+      - databases
+      - databases 2
+      - numeric methods
+
+  - intent: use_USOS_API
+    examples: |
+      - can i use usos api?
+      - can i search by myself?
+      - will you send my request to usos server?
+
+  - intent: USOS_API_query
+    examples: |
+      - services/courses
+      - services/phones
+      - services/users/search2?lang=en
+      - service/photos
+
+  - intent: ask_if_someone_works
+    examples: |
+      - does Tomasz Traczyk work on PW
+      - can I find Robert Nowak at PW
+      - does Jan Paweł work here
+      - can you check if someone works on pw for me
+      - does Andrzej Zalewski teach on Weiti
+
+  - intent: name_and_surname
+    examples: |
+      - Tomasz Traczyk
+      - Robert Nowak
+      - Jan Paweł
+      - Andrzej Zalewski
+      - Jarosław Chudziak
+      - Lech Kaczyński
+      - Janusz Korwin-Mikke
+      - kaczmarski
+      - jacek
+      - piłsudski
+      - józef
+      - john smith
+    

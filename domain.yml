@@ -19,6 +19,10 @@ intents:
   - ask_about_scope_of_studies
   - ask_about_course_search
   - give_course_name
+  - name_and_surname
+  - ask_if_someone_works
+  - USOS_API_query
+  - use_USOS_API
 
 entities:
   - course
@@ -87,6 +91,12 @@ responses:
 
   utter_what_I_found:
     - text: "Thats what I found: \n"
+
+  utter_give_link:
+    - text: "Sure! But I can't get you information which would require logging into your account. Just give me an endpoint which I can use!"
+
+  utter_give_name:
+    - text: "I'm not sure, but if you could give me just the name and surname I can search for them."
 
 
   utter_weiti_courses:
@@ -173,6 +183,8 @@ responses:
 actions:
   - action_faculty_info
   - action_USOS_API_course_search
+  - action_USOS_API_does_work
+  - action_USOS_API_free
 
 session_config:
   session_expiration_time: 60
