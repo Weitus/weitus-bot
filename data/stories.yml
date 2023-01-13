@@ -100,6 +100,7 @@ stories:
       - action: utter_give_link
       - intent: USOS_API_query
       - action: action_USOS_API_free
+
   - story: ask about projects
     steps:
       - intent: ask_about_projects
@@ -118,7 +119,7 @@ stories:
   - story: ask about languages
     steps:
       - intent: ask_about_languages
-      - action: uther_languages
+      - action: utter_languages
       
   - story: ask about PE
     steps:

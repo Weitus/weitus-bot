@@ -89,3 +89,74 @@ stories:
       are you a bot?
     intent: bot_challenge
   - action: utter_iamabot
+
+
+- story: ask about other activities on WEITI
+  steps:
+  - user: |
+      what are other actvities on weiti
+    intent: ask_other_activities
+  - action: utter_other_activities
+
+- story: ask about student housing
+  steps:
+  - user: |
+      can you tell me something about student housing
+    intent: ask_student_housing
+  - action: utter_student_housing
+  - user: |
+      what about prices
+    intent: ask_student_housing_price
+  - action: utter_student_housing_price
+
+- story: ask about course search
+  steps:
+  - user: |
+      please describe one course to me
+    intent: ask_about_course_search
+  - action: utter_ask_what_course
+  - user: |
+      skps
+    intent: give_course_name
+  - action: utter_what_I_found
+  - action: action_USOS_API_course_search
+
+
+- story: ask about staff search
+  steps:
+  - user: |
+      can you check if someone works here
+    intent: ask_if_someone_works
+  - action: utter_give_name
+  - user: |
+      Tomasz Kruk
+    intent: name_and_surname
+  - action: action_USOS_API_does_work
+
+- story: ask about projects
+  steps:
+  - user: |
+      tell me about projects
+    intent: ask_about_projects
+  - action: utter_projects
+
+- story: ask about languages
+  steps:
+  - user: |
+      tell me about languages
+    intent: ask_about_languages
+  - action: utter_languages
+
+- story: ask about PE
+  steps:
+  - user: |
+      tell me about PE
+    intent: ask_about_PE
+  - action: utter_PE
+
+- story: ask about websites
+  steps:
+  - user: |
+      tell me about websites
+    intent: ask_about_websites
+  - action: utter_websites
