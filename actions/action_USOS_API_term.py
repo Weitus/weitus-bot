@@ -30,7 +30,9 @@ class Action_USOS_API_term(Action):
             current_year = str(date.today().year - 1) + "Z"
         elif is_after_finish:
             current_year = current_year[:-1] + "Z"
+        base_url = f"https://apps.usos.pw.edu.pl/services/terms/term?term_id={current_year}"
         term_request = requests.post(base_url)
+        term_request_dict = json.loads(term_request.text)
         term_start_date = datetime.strptime(term_request_dict["start_date"], '%Y-%m-%d').date()
         term_end_date = datetime.strptime(term_request_dict["end_date"], '%Y-%m-%d').date()
         response = f"Term id is {current_year}. It started on {term_start_date} and it ends on {term_end_date}."

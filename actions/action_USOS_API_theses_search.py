@@ -27,8 +27,8 @@ class Action_USOS_API_theses_search(Action):
         thesis_response = client.request(request_url, "POST")
         response = str(thesis_response[1])[2:-1]
         response_dict = json.loads(response)
-        #response = "This are theses that I found in PW database with help of USOS: \n"
         bot_message = ''
+        bot_message += "This are theses that I found in PW database with help of USOS: \n"
         for hit in response_dict["items"]:
             ths_id = hit["thesis"]['id']
             request_url = base_url2 + str(ths_id) + "&fields=title|authors|supervisors"
@@ -51,7 +51,9 @@ class Action_USOS_API_theses_search(Action):
                 supervisors_text = 'unknown supervisors '
             bot_message += supervisors_text
             bot_message += '\n'
-        
-        dispatcher.utter_message(text=str(response))
+        bot_message += "I hope this answer satisfies you."
+
+
+        dispatcher.utter_message(text=str(bot_message))
 
         return []
