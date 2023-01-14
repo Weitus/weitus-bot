@@ -28,6 +28,9 @@ intents:
   - ask_about_course_registration
   - ask_about_languages
   - ask_about_PE
+  - ask_about_current_term
+  - ask_about_theses
+  - theses_topic_query
 
 entities:
   - course
@@ -125,6 +128,9 @@ responses:
   utter_PE:
     - text: "Information about languages are available at:\n https://www.swfis.pw.edu.pl"
 
+  utter_ask_thesis_topic:
+    - text: "What topic of thesis are you interested in?"
+
   utter_weiti_courses:
     - text: |
         The faculty offers 7 courses in Polish and 2 in English
@@ -211,6 +217,8 @@ actions:
   - action_USOS_API_course_search
   - action_USOS_API_does_work
   - action_USOS_API_free
+  - action_USOS_API_term
+  - action_USOS_API_theses_search
 
 session_config:
   session_expiration_time: 60

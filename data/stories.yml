@@ -125,3 +125,15 @@ stories:
     steps:
       - intent: ask_about_PE
       - action: utter_PE  
+
+  - story: ask about current term
+    steps:
+      - intent: ask_about_current_term
+      - action: action_USOS_API_term
+  
+  - story: ask about thesis search
+    steps:
+      - intent: ask_about_theses
+      - action: utter_ask_thesis_topic
+      - intent: theses_topic_query
+      - action: action_USOS_API_theses_search

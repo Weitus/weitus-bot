@@ -406,4 +406,33 @@ nlu:
       - what physical education classes are offered to take
       - what physical education classes are offered to study
 
+  - intent: ask_about_current_term
+    examples: |
+      - what term it is
+      - when does this term end
+      - when did this term start
+      - what is this terms id
+      - can you tell me about this term
+      - when the next term stars
+      - when will classes end
+      - when will be my last class
+
+  - intent: ask_about_theses
+    examples: |
+      - what topics of engineer degree there were
+      - are there any interesting works of students about computers
+      - can you find me theses on one topic
+      - what theses i can find on pw
+      - is there any thesis about cars
+      - what thesis were worked on here
+      - can you find any thesis made by Tomasz Kruk
+
+  - intent: theses_topic_query
+    examples: |
+      - computer
+      - computer aided car control
+      - wireless comunnication in bomb detonation
+      - operating console for mobile robot
+      - keyword spotting in speech signal based on grapheme classification
+      - system for nft rental
 
