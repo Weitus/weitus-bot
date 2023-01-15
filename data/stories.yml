@@ -72,7 +72,6 @@ stories:
     steps:
       - intent: ask_about_courses
       - action: utter_weiti_courses
-  #      - action: utter_course_info
 
   - story: ask about what can student learn on exact course
     steps:

@@ -18,6 +18,11 @@ intents:
   - ask_about_courses
   - ask_about_scope_of_studies
   - ask_about_course_search
+  - ask_about_PE
+  - ask_about_projects
+  - ask_about_websites
+  - ask_about_course_registration
+  - ask_about_languages
   - give_course_name
   - name_and_surname
   - ask_if_someone_works

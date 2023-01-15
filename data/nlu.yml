@@ -405,6 +405,16 @@ nlu:
       - what physical education classes can be studied
       - what physical education classes are offered to take
       - what physical education classes are offered to study
+  - intent: ask_about_PE
+    examples: |
+      - what physical education classes are available
+      - what physical education classes can be taken
+      - what physical education classes are offered
+      - what physical education classes are taught
+      - what physical education classes are supported
+      - what physical education classes can be studied
+      - what physical education classes are offered to take
+      - what physical education classes are offered to study
 
   - intent: ask_about_current_term
     examples: |
