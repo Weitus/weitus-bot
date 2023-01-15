@@ -31,6 +31,16 @@ intents:
   - ask_about_current_term
   - ask_about_theses
   - theses_topic_query
+  - ask_about_teachers
+  - ask_about_erasmus
+  - ask_about_money
+  - ask_about_gf
+  - ask_about_bf
+  - ask_about_job_opportunities
+  - ask_about_future
+  - ask_about_length
+  - ask_why_should_i_study_here
+  - ask_about_offer
 
 entities:
   - course
@@ -116,7 +126,7 @@ responses:
              - USOSPW\n
              - Studia3\n
              - MicrosoftTeams\n
-             Of course each course is available at only one specific page and you have to find which one is used.\
+             Of course each course is available at only one specific page and you have to find which one is used.
              Despite of that, you can't forget, that some professors are above those websites and creating their owns."
 
   utter_registration:
@@ -130,6 +140,36 @@ responses:
 
   utter_ask_thesis_topic:
     - text: "What topic of thesis are you interested in?"
+
+  utter_teachers:
+    - text: "Our teachers are among the most educated people in the engineering. Some of them work on high positions in famous IT companys, some of them own their own businesses, some of them are famous professors with decades of experience."
+
+  utter_why_here:
+    - text: "WEITI is one of the best faculties on PW, which is one most reputable univesities in Poland. You can aquire high quality education here and meet like-minded individuals. Employers also have good opinion about PW graduates."
+
+  utter_erasmus:
+    - text: "You can go on Erasmus while studying on WEITI and study for a while in different country. For more information go here:\n https://www.elka.pw.edu.pl/eng/Students/International-Students-Exchange/Erasmus-Programme "
+
+  utter_gf:
+    - text: "Everything is possible on PW so why not? Just remember that male to female ratio on PW may be slightly disadvantageous."
+
+  utter_bf:
+    - text: "If you are looking for some nice engineering student, you may find someone just for you. Even male to female ratio on PW is on your side."
+
+  utter_after_PW:
+    - text: "After finishing your degree you will probably find a good-paying job in IT sector or maybe start your own business, i don't know, I'm not a future teller. I wish you luck in that."
+
+  utter_possibilites:
+    - text: "WEITI offers opportunity to study a long range of engineering subjects. You may start your first-cycle studies or you can jump straight to second-cycle studies."
+
+  utter_length:
+    - text: "First-cycle studies typically take 3.5 years to finish and second-cycle studies take another 1.5 or 2 years. But you don't have to end it there! You can become doctor or even professor. Your education may never end!"
+
+  utter_money:
+    - text: " I really hope so! I think it depends on more factors than just your university."
+
+  utter_work_opportunities:
+    - text: "Yes, for sure. There are job markets organised on WEITI which make it easier for students to meet their future employers, so this faculty definitely makes finding job easier."
 
   utter_weiti_courses:
     - text: |

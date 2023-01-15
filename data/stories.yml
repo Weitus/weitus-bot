@@ -137,3 +137,53 @@ stories:
       - action: utter_ask_thesis_topic
       - intent: theses_topic_query
       - action: action_USOS_API_theses_search
+
+  - story: ask about teachers
+    steps:
+      - intent: ask_about_teachers
+      - action: utter_teachers
+
+  - story: ask about erasmus
+    steps:
+      - intent: ask_about_erasmus
+      - action: utter_erasmus
+
+  - story: ask about money
+    steps:
+      - intent: ask_about_money
+      - action: utter_money
+
+  - story: ask_about_gf
+    steps:
+      - intent: ask_about_gf
+      - action: utter_gf
+
+  - story: ask_about_bf
+    steps:
+      - intent: ask_about_bf
+      - action: utter_bf
+
+  - story: ask about job opportunities
+    steps:
+      - intent: ask_about_job_opportunities
+      - action: utter_work_opportunities
+
+  - story: ask about future
+    steps:
+      - intent: ask_about_future
+      - action: utter_after_PW
+
+  - story: ask about length
+    steps:
+      - intent: ask_about_length
+      - action: utter_length
+
+  - story: ask why should i study here
+    steps:
+      - intent: ask_why_should_i_study_here
+      - action: utter_why_here
+
+  - story: ask about offer
+    steps:
+      - intent: ask_about_offer
+      - action: utter_possibilites

@@ -436,3 +436,87 @@ nlu:
       - keyword spotting in speech signal based on grapheme classification
       - system for nft rental
 
+  - intent: ask_about_teachers
+    examples: |
+      - who works on weiti
+      - who are your teachers
+      - does someone with business experience work here
+      - any famous professors teach here
+      - do your teachers know anything
+      - people of business teach here?
+      - do WEITI porfessors teach for long time
+  
+  - intent: ask_about_erasmus
+    examples: |
+      - can i go on erasmus
+      - are there any student exchange programmes?
+      - studying abroad on PW
+      - is it possible to learn in different countries?
+      - can I visit univeristies abroad when studying on PW?
+
+  - intent: ask_about_money
+    examples: |
+      - will I earn a lot
+      - will I get a lot of money
+      - will my business be successful
+      - will I be super rich
+  
+  - intent: ask_about_gf
+    examples: |
+      - can i get girlfriend on pw
+      - will I meet my wife here
+      - can I find attractive women on WEITI
+      - are there any women who will want to become my partner
+      - is love of my life on PW
+
+  - intent: ask_about_bf
+    examples: |
+      - can i get boyfriend on pw
+      - will I meet my husband here
+      - can I find attractive men on WEITI
+      - are there any men who will want to become my partner
+    
+  - intent: ask_about_job_opportunities
+    examples: |
+      - will I find job
+      - do employers care about weiti
+      - do you help in getting positions in companies
+      - is getting job easier for students
+      - do you help in getting employed
+
+  - intent: ask_about_future
+    examples: |
+      - what will I do after weiti
+      - what work will I be in future
+      - where will I be employed
+      - can I achieve success in future
+      - what's after PW
+      - where will I land after these studies
+
+  - intent: ask_about_length
+    examples: |
+      - how long does it take to finish degree on PW
+      - when will i finish studies
+      - how many years first-cycle studies take
+      - how big part of my life will I waste here
+      - how much time studies take
+      - are studies long
+  
+  - intent: ask_why_should_i_study_here
+    examples: |
+      - why should I study here
+      - how would you convince me to study on pW
+      - try to convince me to study on WEITI
+      - why should I choose weiti over other universities
+      - is weiti even good
+      - is Weiti worth studying on?
+
+  - intent: ask_about_offer
+    examples: |
+      - what studies do you offer
+      - do you offer first-cycle studies
+      - can i get master's degree here
+      - can i get degree here
+      - how can i study here
+      - what type of studies do you offer
+      - what degrees do you offer
