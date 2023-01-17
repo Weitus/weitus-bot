@@ -96,7 +96,7 @@ responses:
     - text: "Students Office is located here:\n https://www.google.com/maps/place/Wydzia%C5%82+Elektroniki+i+Technik+Informacyjnych,+Politechnika+Warszawska/@52.2190346,21.0096698,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecce91dd158b3:0x188bc853d7b6b561!8m2!3d52.2190346!4d21.0118585?hl=pl \n  and is open from 8 a.m. to 4 a.m. You can find more information here:\n https://www.elka.pw.edu.pl/eng/Faculty/Faculty-main-units/Students-Office"
 
   utter_other_activities:
-    - text: "There are many Students Organisations and Clubs on WEITI like AI Club GOLEM. You can find more about them here: \n https://www.elka.pw.edu.pl/eng/Research/Students-Organisations-and-Clubs"
+    - text: "There are many Students Organizations and Clubs on WEITI like AI Club GOLEM. You can find more about them here: \n https://www.elka.pw.edu.pl/eng/Research/Students-Organisations-and-Clubs"
 
   utter_student_housing:
     - text: "You can find info about student housing here: \n https://www.akademiki.pw.edu.pl/akademiki_en"
@@ -105,7 +105,7 @@ responses:
     - text: "Here you have some information about prices: \n https://www.akademiki.pw.edu.pl/akademiki_en/Akty-prawne"
 
   utter_ask_what_course:
-    - text: "What course whould you like inforamtion about?"
+    - text: "What course would you like information about?"
 
   utter_what_I_found:
     - text: "Thats what I found: \n"
@@ -117,7 +117,7 @@ responses:
     - text: "I'm not sure, but if you could give me just the name and surname I can search for them."
 
   utter_projects:
-    - text: "You can find informations about our projects and science labs here: \n https://www.pw.edu.pl/Badania/Projekty-badawcze"
+    - text: "You can find information about our projects and science labs here: \n https://www.pw.edu.pl/Badania/Projekty-badawcze"
 
   utter_websites:
     - text: "PW is called 'Technicznie najlepsi!', so they are using many websites to communicate with students.\n
@@ -142,10 +142,10 @@ responses:
     - text: "What topic of thesis are you interested in?"
 
   utter_teachers:
-    - text: "Our teachers are among the most educated people in the engineering. Some of them work on high positions in famous IT companys, some of them own their own businesses, some of them are famous professors with decades of experience."
+    - text: "Our teachers are among the most educated people in the engineering. Some of them work on high positions in famous IT companies, some of them own their own businesses, some of them are famous professors with decades of experience."
 
   utter_why_here:
-    - text: "WEITI is one of the best faculties on PW, which is one most reputable univesities in Poland. You can aquire high quality education here and meet like-minded individuals. Employers also have good opinion about PW graduates."
+    - text: "WEITI is one of the best faculties on PW, which is one most reputable universities in Poland. You can acquire high quality education here and meet like-minded individuals. Employers also have good opinion about PW graduates."
 
   utter_erasmus:
     - text: "You can go on Erasmus while studying on WEITI and study for a while in different country. For more information go here:\n https://www.elka.pw.edu.pl/eng/Students/International-Students-Exchange/Erasmus-Programme "
@@ -169,7 +169,7 @@ responses:
     - text: " I really hope so! I think it depends on more factors than just your university."
 
   utter_work_opportunities:
-    - text: "Yes, for sure. There are job markets organised on WEITI which make it easier for students to meet their future employers, so this faculty definitely makes finding job easier."
+    - text: "Yes, for sure. There are job markets organized on WEITI which make it easier for students to meet their future employers, so this faculty definitely makes finding job easier."
 
   utter_weiti_courses:
     - text: |

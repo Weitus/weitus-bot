@@ -289,6 +289,9 @@ nlu:
       - databases
       - databases 2
       - numeric methods
+      - computer architecture
+      - wsyz
+      - WSYZ
 
   - intent: use_USOS_API
     examples: |
