@@ -17,11 +17,10 @@ class Action_USOS_API_does_work(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
         input_prompt = tracker.latest_message["text"]
         base_url = "https://apps.usos.pw.edu.pl/services/users/search2?lang=en"
         request_url = base_url + "&query=" + input_prompt + "&among=staff"
-        consumer = oauth2.Consumer(usos_key,usos_secret)
+        consumer = oauth2.Consumer(usos_key, usos_secret)
         client = oauth2.Client(consumer)
         staff_response = client.request(request_url, "POST")
         response = str(staff_response[1])[2:-1]
@@ -30,7 +29,8 @@ class Action_USOS_API_does_work(Action):
         for hit in response_dict["items"]:
             response += hit["match"] + "\n"
         response += "I hope you are looking for one of them."
-        
+        response = response.encode('utf-8').decode('unicode_escape')
+
         dispatcher.utter_message(text=str(response))
 
         return []
