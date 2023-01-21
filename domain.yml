@@ -45,12 +45,26 @@ intents:
 entities:
   - course
 
+forms:
+  usos_course_search_form:
+    required_slots:
+      - usos_course_name
+
 slots:
   course:
     type: text
     mappings:
       - type: from_entity
         entity: course
+  usos_course_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: usos_course_search_form
+            requested_slot: usos_course_name
+
 
 responses:
   utter_greet:
@@ -170,6 +184,9 @@ responses:
 
   utter_work_opportunities:
     - text: "Yes, for sure. There are job markets organised on WEITI which make it easier for students to meet their future employers, so this faculty definitely makes finding job easier."
+
+  utter_ask_usos_course_name:
+    - text: "What course would you like to know about?"
 
   utter_weiti_courses:
     - text: |

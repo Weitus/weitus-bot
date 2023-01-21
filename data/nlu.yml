@@ -274,22 +274,6 @@ nlu:
       - i'm looking for course
       - give me description of subject
 
-  - intent: give_course_name
-    examples: |
-      - ARKO
-      - SKM
-      - SKPS
-      - arko
-      - skm
-      - skps
-      - aisdi
-      - algorithms and data structures
-      - architektura komputerow
-      - sieci komputerowe
-      - databases
-      - databases 2
-      - numeric methods
-
   - intent: use_USOS_API
     examples: |
       - can i use usos api?
@@ -325,7 +309,7 @@ nlu:
       - piłsudski
       - józef
       - john smith
-    
+
   - intent: ask_about_course_search
     examples: |
       - can you tell me something about courses?
@@ -335,7 +319,7 @@ nlu:
       - give me description of one course
       - i'm looking for course
       - give me description of subject
-      
+
   - intent: ask_about_projects
     examples: |
       - what projects do you have
@@ -455,7 +439,7 @@ nlu:
       - do your teachers know anything
       - people of business teach here?
       - do WEITI porfessors teach for long time
-  
+
   - intent: ask_about_erasmus
     examples: |
       - can i go on erasmus
@@ -470,7 +454,7 @@ nlu:
       - will I get a lot of money
       - will my business be successful
       - will I be super rich
-  
+
   - intent: ask_about_gf
     examples: |
       - can i get girlfriend on pw
@@ -485,7 +469,7 @@ nlu:
       - will I meet my husband here
       - can I find attractive men on WEITI
       - are there any men who will want to become my partner
-    
+
   - intent: ask_about_job_opportunities
     examples: |
       - will I find job
@@ -511,7 +495,7 @@ nlu:
       - how big part of my life will I waste here
       - how much time studies take
       - are studies long
-  
+
   - intent: ask_why_should_i_study_here
     examples: |
       - why should I study here

@@ -5,7 +5,6 @@ from rasa_sdk.executor import CollectingDispatcher
 from usos_credentials import usos_key, usos_secret
 
 import json
-import requests
 import oauth2
 
 
@@ -22,7 +21,7 @@ class Action_USOS_API_theses_search(Action):
         base_url = "https://apps.usos.pw.edu.pl/services/theses/search?lang=en"
         base_url2 = "https://apps.usos.pw.edu.pl/services/theses/thesis?ths_id="
         request_url = base_url + "&query=" + input_prompt
-        consumer = oauth2.Consumer(usos_key,usos_secret)
+        consumer = oauth2.Consumer(usos_key, usos_secret)
         client = oauth2.Client(consumer)
         thesis_response = client.request(request_url, "POST")
         response = str(thesis_response[1])[2:-1]
@@ -52,7 +51,6 @@ class Action_USOS_API_theses_search(Action):
             bot_message += supervisors_text
             bot_message += '\n'
         bot_message += "I hope this answer satisfies you."
-
 
         dispatcher.utter_message(text=str(bot_message))
 
