@@ -2,17 +2,34 @@ version: "3.1"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
 
-- rule: Anytime dean's office is mentioned
-  steps:
-  - intent: dean_office
-  - action: utter_dean_office
+  - rule: Anytime dean's office is mentioned
+    steps:
+      - intent: dean_office
+      - action: utter_dean_office
+
+  - rule: Get info about course from user
+    steps:
+      - intent: ask_about_course_search
+      - action: usos_course_search_form
+      - active_loop: usos_course_search_form
+
+  - rule: Send api request about course info to USOS
+    condition:
+      - active_loop: usos_course_search_form
+    steps:
+      - action: usos_course_search_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_what_I_found
+      - action: action_USOS_API_course_search
