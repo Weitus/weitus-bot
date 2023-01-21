@@ -2,6 +2,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
 from usos_credentials import usos_key, usos_secret
 
 import json
@@ -17,7 +18,7 @@ class Action_USOS_API_does_work(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        input_prompt = tracker.latest_message["text"]
+        input_prompt = tracker.get_slot("usos_staff_name")
         base_url = "https://apps.usos.pw.edu.pl/services/users/search2?lang=en"
         request_url = base_url + "&query=" + input_prompt + "&among=staff"
         consumer = oauth2.Consumer(usos_key, usos_secret)
@@ -33,4 +34,4 @@ class Action_USOS_API_does_work(Action):
 
         dispatcher.utter_message(text=str(response))
 
-        return []
+        return [SlotSet("usos_staff_name")]

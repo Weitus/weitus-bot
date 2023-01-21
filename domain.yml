@@ -49,6 +49,12 @@ forms:
   usos_course_search_form:
     required_slots:
       - usos_course_name
+  usos_does_work_form:
+    required_slots:
+      - usos_staff_name
+  usos_thesis_name_form:
+    required_slots:
+      - usos_thesis_name
 
 slots:
   course:
@@ -64,6 +70,22 @@ slots:
         conditions:
           - active_loop: usos_course_search_form
             requested_slot: usos_course_name
+  usos_staff_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: usos_does_work_form
+            requested_slot: usos_staff_name
+  usos_thesis_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: usos_thesis_name_form
+            requested_slot: usos_thesis_name
 
 
 responses:

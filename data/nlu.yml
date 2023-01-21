@@ -296,21 +296,6 @@ nlu:
       - can you check if someone works on pw for me
       - does Andrzej Zalewski teach on Weiti
 
-  - intent: name_and_surname
-    examples: |
-      - Tomasz Traczyk
-      - Robert Nowak
-      - Jan Paweł
-      - Andrzej Zalewski
-      - Jarosław Chudziak
-      - Lech Kaczyński
-      - Janusz Korwin-Mikke
-      - kaczmarski
-      - jacek
-      - piłsudski
-      - józef
-      - john smith
-
   - intent: ask_about_course_search
     examples: |
       - can you tell me something about courses?
@@ -421,15 +406,6 @@ nlu:
       - is there any thesis about cars
       - what thesis were worked on here
       - can you find any thesis made by Tomasz Kruk
-
-  - intent: theses_topic_query
-    examples: |
-      - computer
-      - computer aided car control
-      - wireless comunnication in bomb detonation
-      - operating console for mobile robot
-      - keyword spotting in speech signal based on grapheme classification
-      - system for nft rental
 
   - intent: ask_about_teachers
     examples: |

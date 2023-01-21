@@ -2,6 +2,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
 from usos_credentials import usos_key, usos_secret
 
 import json
@@ -17,7 +18,7 @@ class Action_USOS_API_theses_search(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        input_prompt = tracker.latest_message["text"]
+        input_prompt = tracker.get_slot("usos_thesis_name")
         base_url = "https://apps.usos.pw.edu.pl/services/theses/search?lang=en"
         base_url2 = "https://apps.usos.pw.edu.pl/services/theses/thesis?ths_id="
         request_url = base_url + "&query=" + input_prompt
@@ -54,4 +55,4 @@ class Action_USOS_API_theses_search(Action):
 
         dispatcher.utter_message(text=str(bot_message))
 
-        return []
+        return [SlotSet("usos_thesis_name", None)]

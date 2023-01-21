@@ -78,13 +78,6 @@ stories:
       - intent: ask_about_scope_of_studies
       - action: utter_course_info
 
-  - story: ask about staff search
-    steps:
-      - intent: ask_if_someone_works
-      - action: utter_give_name
-      - intent: name_and_surname
-      - action: action_USOS_API_does_work
-
   - story: use USOS API freely
     steps:
       - intent: use_USOS_API
@@ -121,13 +114,6 @@ stories:
     steps:
       - intent: ask_about_current_term
       - action: action_USOS_API_term
-
-  - story: ask about thesis search
-    steps:
-      - intent: ask_about_theses
-      - action: utter_ask_thesis_topic
-      - intent: theses_topic_query
-      - action: action_USOS_API_theses_search
 
   - story: ask about teachers
     steps:

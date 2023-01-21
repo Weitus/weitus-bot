@@ -33,3 +33,37 @@ rules:
           - requested_slot: null
       - action: utter_what_I_found
       - action: action_USOS_API_course_search
+
+  - rule: Send api request about theses to USOS
+    condition:
+      - active_loop: usos_thesis_name_form
+    steps:
+      - action: usos_thesis_name_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_USOS_API_theses_search
+
+  - rule: Get info about thesis from user
+    steps:
+      - intent: ask_about_theses
+      - action: utter_ask_thesis_topic
+      - action: usos_thesis_name_form
+      - active_loop: usos_thesis_name_form
+
+  - rule: Send api request about PW staff to USOS
+    condition:
+      - active_loop: usos_does_work_form
+    steps:
+      - action: usos_does_work_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_USOS_API_does_work
+
+  - rule: Get info about staff from user
+    steps:
+      - intent: ask_if_someone_works
+      - action: utter_give_name
+      - action: usos_does_work_form
+      - active_loop: usos_does_work_form
