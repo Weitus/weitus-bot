@@ -27,10 +27,13 @@ class Action_USOS_API_does_work(Action):
         response = str(staff_response[1])[2:-1]
         response_dict = json.loads(response)
         response = "This are people that I found among staff of PW with help of USOS: \n"
-        for hit in response_dict["items"]:
-            response += hit["match"] + "\n"
-        response += "I hope you are looking for one of them."
-        response = response.encode('utf-8').decode('unicode_escape')
+        if not response_dict["items"]:
+            response = "Sorry I couldn't find anyone with that name."
+        else:
+            for hit in response_dict["items"]:
+                response += hit["match"] + "\n"
+            response += "I hope you are looking for one of them."
+            response = response.encode('utf-8').decode('unicode_escape')
 
         dispatcher.utter_message(text=str(response))
 
